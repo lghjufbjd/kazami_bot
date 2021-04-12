@@ -96,10 +96,13 @@ bot.on('message', message=>{
         case 'help':
             const embed = new Discord.RichEmbed()
             .setTitle('Pomoc')
-            .addField('Komendy: \n !kocham\n !dajszopa\n !play\n !skip\n !stop')
+            .addField('Komendy: \n !kocham\n !dajszopa\n !play\n !skip\n !stop\n !dajSwojaFote')
             .setImage('https://external-preview.redd.it/F1C4LYhgJ9NAvhNbzL7amwOA_ngUrZwMMr9K4FQ0IwI.png?auto=webp&s=7326cc0d9c351100fa31f31d67a30afcb30cd9dd')
             .setColor(0xF1C40F)
             message.channel.sendEmbed(embed);
+        break;
+	case 'dajSwojaFote':
+            message.reply('.hentaibomb oshino shinobu');
         break;
         case 'kocham':
             message.reply('cię');
